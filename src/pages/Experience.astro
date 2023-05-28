@@ -15,8 +15,9 @@ import PersonalWebPage from "../layouts/Layout.astro";
         padding: 20px;
         width: 300px;
         margin: 20px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 5px rgba(121, 121, 121, 0.1);
         text-align: center;
+        background-color: #cccccc27;
     }
 
     .card h2 {
@@ -28,9 +29,36 @@ import PersonalWebPage from "../layouts/Layout.astro";
         height: auto;
         margin-bottom: 10px;
     }
+    .card ul{
+        text-align: justify;
+        align-items: 20px;
+
+    }
+    .card a{
+        color: rgb(233, 233, 233);
+    }
 </style>
 
 <div class="card-container">
+    <div class="card">
+        <img
+            src="../public/thumbnail-social.jpg"
+            alt="Logo BV"
+            width="300"
+            class="logo"
+        />
+        <div>
+            <h4>
+                <a href="https://www.bottegaveneta.com/en-es"
+                    ><strong>Bottega Veneta</strong> May - Sep 2023</a>
+            </h4>
+            <ul>
+                <li>Sales skills</li>
+                <li>Cash handling</li>
+            </ul>
+        </div>
+    </div>
+    
     <div class="card">
         <img
             src="../public/adelte.600x0.jpg"
@@ -41,7 +69,7 @@ import PersonalWebPage from "../layouts/Layout.astro";
         <div>
             <h4>
                 <a href="https://www.adelte.com/"
-                    ><strong>ADELTE</strong> The Boarding Company</a>
+                    ><strong>ADELTE</strong> The Boarding Company. Oct 2022 - Jan 2023</a>
             </h4>
             <ul>
                 <li>Production of technical drawings and small CAD designs.</li>
@@ -61,7 +89,7 @@ import PersonalWebPage from "../layouts/Layout.astro";
         <div>
             <h4>
                 <a href="https://cortefiel.com/es/es"
-                    ><strong>CORTEFIEL</strong></a>
+                    ><strong>CORTEFIEL</strong> May 2022 - Oct 2022</a>
             </h4>
             <ul>
                 <li>Customer service</li>
