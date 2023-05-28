@@ -5,15 +5,22 @@ import PersonalWebPage from "../layouts/Layout.astro";
 <PersonalWebPage title="Álvaro Casas Martínez" />
 
 <style>
+     .card-container {
+      display: flex;
+      justify-content: space-between;
+    }
     .card {
-        border: 1px solid #000000;
-        padding: 20px;
-        width: 300px;
+        border: 2px solid #000000;
+        padding: 40px;
+        width: 400px;
+        height: auto;
         margin: 20px;
         box-shadow: 2px 3px 5px rgba(255, 255, 255, 0.1);
         background-color: #3f3f3f;
-        display: flex;
-        flex-direction:column;
+        display: inline-block;
+        align-items: center;
+        
+
 
     }
 
@@ -23,11 +30,13 @@ import PersonalWebPage from "../layouts/Layout.astro";
         height: auto;
         margin-bottom: 10px;
     }
+   
 </style>
 <p>
     As an nexample of my personal projects, here there are two logotypes that I
     designed to other subjects
 </p>
+<div class="class-container"> 
 <div class="card">
     <img
         src="../public/77.png"
@@ -43,8 +52,9 @@ import PersonalWebPage from "../layouts/Layout.astro";
     <img
         src="../public/Logo_png.png"
         alt="Logotipo de un segundo proyecto"
-        width="500"
+        width="350"
         class="logo"
     />
     <p>Water rocket designed to <strong>Manufacturing and maintenance technology</strong> subject</p>
+</div>
 </div>
