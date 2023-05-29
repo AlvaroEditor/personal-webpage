@@ -1,5 +1,5 @@
 ---
-import PersonalWebPage from "../layouts/Layout.astro"; 
+import PersonalWebPage from "../layouts/Layout.astro";
 ---
 
 <PersonalWebPage title="Álvaro Casas Martínez" />
@@ -18,6 +18,7 @@ import PersonalWebPage from "../layouts/Layout.astro";
         box-shadow: 1px 3px 5px rgba(107, 107, 107, 0.253);
         text-align: center;
         background-color: #cccccc27;
+        border-radius: 4px;
     }
 
     .card h2 {
@@ -29,20 +30,38 @@ import PersonalWebPage from "../layouts/Layout.astro";
         height: auto;
         margin-bottom: 10px;
     }
-    .card ul{
+    .card ul {
         text-align: justify;
         align-items: 20px;
-
     }
-    .card a{
+    .card a {
         color: rgb(233, 233, 233);
     }
-    img{
-        box-shadow:1px 3px 5px rgba(255, 255, 255, 0.253) ;
+    img {
+        box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.253);
         border: 2px solid black;
+        border-radius: 4px;
+    }
+    #text {
+        text-align: justify;
+        height: auto;
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
     }
 </style>
-
+<div id="text">
+    <p>
+        During this last year I have been introducing myself to the working
+        world in an official way. Years ago I had done private lessons to
+        children of high school and high school, but I left it to introduce
+        myself more professionally to the world of work. Here are the companies
+        where I have worked and the basic tasks I have carried out.
+    </p>
+</div>
 <div class="card-container">
     <div class="card">
         <img
@@ -54,7 +73,8 @@ import PersonalWebPage from "../layouts/Layout.astro";
         <div>
             <h4>
                 <a href="https://www.bottegaveneta.com/en-es"
-                    ><strong>Bottega Veneta</strong> </a><p>May - Sep 2023</p>
+                    ><strong>Bottega Veneta</strong>
+                </a><p>May - Sep 2023</p>
             </h4>
             <ul>
                 <li>Sales skills</li>
@@ -62,7 +82,7 @@ import PersonalWebPage from "../layouts/Layout.astro";
             </ul>
         </div>
     </div>
-    
+
     <div class="card">
         <img
             src="/adelte.600x0.jpg"
@@ -73,7 +93,9 @@ import PersonalWebPage from "../layouts/Layout.astro";
         <div>
             <h4>
                 <a href="https://www.adelte.com/"
-                    ><strong>ADELTE</strong> The Boarding Company. </a> <p>Oct 2022 - Jan 2023</p>
+                    ><strong>ADELTE</strong> The Boarding Company.
+                </a>
+                <p>Oct 2022 - Jan 2023</p>
             </h4>
             <ul>
                 <li>Production of technical drawings and small CAD designs.</li>
@@ -93,7 +115,9 @@ import PersonalWebPage from "../layouts/Layout.astro";
         <div>
             <h4>
                 <a href="https://cortefiel.com/es/es"
-                    ><strong>CORTEFIEL</strong> </a> <p>May 2022 - Oct 2022</p>
+                    ><strong>CORTEFIEL</strong>
+                </a>
+                <p>May 2022 - Oct 2022</p>
             </h4>
             <ul>
                 <li>Customer service</li>
